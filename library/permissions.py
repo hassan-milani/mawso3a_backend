@@ -6,6 +6,9 @@ class HasRolePermission(BasePermission):
         if request.method in ('GET', 'HEAD', 'OPTIONS'):
             return True
         
+        if request.user.is_superuser:
+            return True
+        
         if not request.user.is_authenticated:
             return False
         
