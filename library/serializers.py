@@ -9,8 +9,6 @@ class BabSerializer(serializers.ModelSerializer):
         
         
 class MawdoeSerializer(serializers.ModelSerializer):
-    bab = BabSerializer()
-
     class Meta:
         model = Mawdoe
         fields = '__all__'
@@ -18,8 +16,6 @@ class MawdoeSerializer(serializers.ModelSerializer):
 
 
 class PageSerializer(serializers.ModelSerializer):
-    mawdoe = MawdoeSerializer()
-
     class Meta:
         model = Page
         fields = '__all__'
