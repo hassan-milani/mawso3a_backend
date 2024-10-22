@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'senarioWriters',
     'rest_framework',
     'corsheaders',
+    'django_extensions',
     'django_ckeditor_5',
     'django.contrib.admin',
     'django.contrib.auth',
